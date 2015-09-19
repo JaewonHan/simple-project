@@ -8,7 +8,7 @@ else if(selvalue == "2"){
 var newSrc = '/assets/cover_catholic';
 }
 else if(selvalue == "3"){
-var newSrc = '/assets/cover_kangwon';
+var newSrc = '/public/assets/cover_kangwon';
 }
 else if(selvalue == "4"){
 var newSrc = '/assets/cover_konkuk';
