@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-show_selected() 
+function show_selected() 
     var selector = document.getElementById('id_of_select')
     var value = selector[selector.selectedIndex].value
 
