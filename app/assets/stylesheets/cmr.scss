@@ -4,6 +4,9 @@
 /* css주석처리 wrap > nav/first/center/footer로 구성 */
 
 
+body#p_page3 {
+    background-color: white;
+}
 
 .wrap {
     height:1240px;
@@ -272,7 +275,7 @@ div {
 .maker_item {
     position: relative;
     padding: 0px;
-    left:-30px;
+    left:0px;
     float: left;
     
     
@@ -427,10 +430,10 @@ div {
 .fa {
     position:relative;
     float:left;
-    left:80px;   
+    left:66px;   
     top:0px;
     padding:0px;
-    
+
 }
 .fb {
     position:relative;

@@ -176,54 +176,35 @@ document.getElementById('wfrm').src = newSrc;
 
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
 <!-- Plugin CSS -->
 <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-
-
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-<div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
-<div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand page-scroll" href="#page-top">Cover my Report</a>
-</div>
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
-<li>
-<a class="page-scroll" href="#maintop">메인</a>
-</li>
-<li>
-<a class="page-scroll" href="#about">서비스소개</a>
-</li>
-<li>
-<a class="page-scroll" href="#makers">개발자소개</a>
-</li>
-<li>
-<a class="page-scroll" href="#contact">문의 | 제안</a>
-</li>
-</ul>
-</div>
-<!-- /.navbar-collapse -->
-</div>
-<!-- /.container-fluid -->
-</nav>
 
 <!-- wrap = nav+first+center+footer -->
 <div class="wrap">
@@ -234,7 +215,40 @@ document.getElementById('wfrm').src = newSrc;
 <img id="maintop" class="firstimg" src="/assets/title.png">
 </div>
 
+<!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                </a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 <!-- center : Email주소 -->
 <div id="center">
 <div id="printarea"  >
@@ -329,25 +343,6 @@ document.getElementById('wfrm').src = newSrc;
 
 </div>
 
-<script type="text/javascript">
-var win=null;
-function print(printThis)  
-{
-win = window.open();
-win.self.focus();
-win.document.open();
-win.document.write('<'+'html'+'><'+'head'+'><'+'style'+'>');
-win.document.write('body, td { font-family: Verdana; font-size: 10pt;}');
-win.document.write('<'+'/'+'style'+'><'+'/'+'head'+'><'+'body'+'>');
-win.document.write(printThis);
-win.document.write('<'+'/'+'body'+'><'+'/'+'html'+'>');
-win.document.close();
-win.print();
-win.close();
-}
-</script>
-
-
 
 <!-- footer : 프린트버튼, 보내기버튼 -->
 <!--
@@ -390,125 +385,122 @@ win.close();
 </div> 
 -->
 
-
-<!-----temp 서비스 소개 How to Use ----->
-<div id="about">
-<h1 class="howtouse">How to Use</h1>
-</div>
 <!----- 개발자 소개 made by ----->
 
 <div class="intro_makers" id="makers" style="display">
 
-<div class="intro_title">
-<p>made by</p>
-</div><br>
-<div id="intro_container">
-
-<div class="maker_item col-md-4 col-sm-4 col-xs-12" id=intromakers >
-<img class="img_makers" src="/assets/withbear.jpg" alt="">
-<div class="section_makers_info">
-<div class="makers_info">
-<p class="maker_name">한재원</p>
-<p class="maker_role">단국대 화학공학과</p>
-</div>
-<div class="makers_info">
-<p class="label_info">Role</p>
-<p class="content_info">기획, 디자인</p>
-</div>
-
-<div class="makers_info">
-<p class="label_info">Nickname</p>
-<p class="content_info">갓재원</p>
-</div>
-<div class="makers_info">
-<p class="label_info">A word</p>
-<p class="content_info">a.k.a 파워블로거</p>
-</div>
-<div class="makers_info" id="line">
-<p class="label_info">Contact</p>
-<p class="content_info"> 인스타그램</p>
-</div>
-</div>
-<div class= "fb col-md-4 col-sm-4 col-xs-12">
-<a href="https://www.facebook.com/jxwonah"><i class="fa fa-facebook-official fa-3x"></i></a>
-</div>
-<div class= "insta col-md-4 col-sm-4 col-xs-12">  
-<a href=""><i class="fa fa-instagram fa-3x"></i></a>
-</div>    
-</div>
-
-<div class="maker_item col-md-4 col-sm-4 col-xs-12">
-<img class="img_makers" src="/assets/yeonwoo.png" alt="">
-<div class="section_makers_info section_makers_info_side">
-<div class="makers_info">
-<p class="maker_name">김연우</p>
-<p class="maker_role">단국대 경제학과</p>
-</div>
-
-<div class="makers_info">
-<p class="label_info">Role</p>
-<p class="content_info">개발, CTO</p>
-</div>
-
-<div class="makers_info">
-<p class="label_info">Nickname</p>
-<p class="content_info">연우신</p>
-</div>
-<div class="makers_info">
-<p class="label_info">A word</p>
-<p class="content_info">어디로 가야하죠 아저씨</p>
-</div>
-<div class="makers_info" id="line">
-<p class="label_info">Contact</p>
-<p class="content_info">페이스북, 인스타그램</p>
-</div>
-
-</div>
-<div class= "fb col-md-4 col-sm-4 col-xs-12">
-<a href=""><i class="fa fa-facebook-official fa-3x"></i></a>
-</div>    
-<div class= " insta col-md-4 col-sm-4 col-xs-12">  
-<a href=""><i class="fa fa-instagram fa-3x"></i></a>
-</div>        
-</div>
-
-<div class="maker_item col-md-4 col-sm-4 col-xs-12 ">
-<img class="img_makers" src="/assets/withbear.jpg" >
-<div class="section_makers_info">
-
-<div class="makers_info">
-<p class="maker_name">박상범</p>
-<p class="maker_role">단국대 경영학과</p>
-</div>
-
-<div class="makers_info">
-<p class="label_info">Role</p>
-<p class="content_info">개발, CMO</p>
-</div>
-
-<div class="makers_info">
-<p class="label_info">Nickname</p>
-<p class="content_info">원빈</p>
-</div>
-<div class="makers_info">
-<p class="label_info">A word</p>
-<p class="content_info">이거 방탄표지야</p>
-</div>
-<div class="makers_info" id="line">
-<p class="label_info">Contact</p>
-<p class="content_info">애슐리메디슨</p>
-</div>
-
-</div>
-<div class= "fb col-md-4 col-sm-4 col-xs-12">
-<a href="https://www.facebook.com/beeoomp"><i class="fa fa-facebook-official fa-3x"></i></a>
-</div>
-<div class= "insta col-md-4 col-sm-4 col-xs-12">  
-<a href="https://instagram.com/beombampatrk/"><i class="fa fa-instagram fa-3x"></i></a>
-</div>    
-</div>
-</div> 
-<!-- /.intro_container -->
+    <div class="intro_title">
+        <p>made by</p>
+        </div><br>
+    <div id="intro_container">
+    
+    <div class="maker_item col-md-4 col-sm-4 col-xs-12" id=intromakers >
+        <img class="img_makers" src="/assets/withbear.jpg" alt="">
+        <div class="section_makers_info">
+        <div class="makers_info">
+        <p class="maker_name">한재원</p>
+        <p class="maker_role">단국대 화학공학과</p>
+        </div>
+        <div class="makers_info">
+        <p class="label_info">Role</p>
+        <p class="content_info">기획, 디자인</p>
+        </div>
+        
+        <div class="makers_info">
+        <p class="label_info">Nickname</p>
+        <p class="content_info">갓재원</p>
+        </div>
+        <div class="makers_info">
+        <p class="label_info">A word</p>
+        <p class="content_info">a.k.a 파워블로거</p>
+        </div>
+        <div class="makers_info" id="line">
+        <p class="label_info">Contact</p>
+        <p class="content_info"> 인스타그램</p>
+        </div>
+        
+        <div class= "fb col-md-4 col-sm-4 col-xs-12">
+        <a href="https://www.facebook.com/jxwonah"><i class="fa fa-facebook-official fa-3x"></i></a>
+        </div>
+        <div class= "insta col-md-4 col-sm-4 col-xs-12">  
+        <a href=""><i class="fa fa-instagram fa-3x"></i></a>
+        </div>  
+        </div>
+    </div>
+    
+    <div class="maker_item col-md-4 col-sm-4 col-xs-12">
+    <img class="img_makers" src="/assets/yeonwoo.png" alt="">
+    <div class="section_makers_info section_makers_info_side">
+    <div class="makers_info">
+    <p class="maker_name">김연우</p>
+    <p class="maker_role">단국대 경제학과</p>
+    </div>
+    
+    <div class="makers_info">
+    <p class="label_info">Role</p>
+    <p class="content_info">개발, CTO</p>
+    </div>
+    
+    <div class="makers_info">
+    <p class="label_info">Nickname</p>
+    <p class="content_info">연우신</p>
+    </div>
+    <div class="makers_info">
+    <p class="label_info">A word</p>
+    <p class="content_info">어디로 가야하죠 아저씨</p>
+    </div>
+    <div class="makers_info" id="line">
+    <p class="label_info">Contact</p>
+    <p class="content_info">페이스북, 인스타그램</p>
+    </div>
+    
+    
+    <div class= "fb col-md-4 col-sm-4 col-xs-12">
+    <a href=""><i class="fa fa-facebook-official fa-3x"></i></a>
+    </div>    
+    <div class= " insta col-md-4 col-sm-4 col-xs-12">  
+    <a href=""><i class="fa fa-instagram fa-3x"></i></a>
+    </div>        
+    </div>
+    </div>
+    <div class="maker_item col-md-4 col-sm-4 col-xs-12 ">
+    <img class="img_makers" src="/assets/withbear.jpg" >
+    <div class="section_makers_info">
+    
+    <div class="makers_info">
+        <p class="maker_name">박상범</p>
+        <p class="maker_role">단국대 경영학과</p>
+    </div>
+    
+    <div class="makers_info">
+    <p class="label_info">Role</p>
+    <p class="content_info">개발, CMO</p>
+    </div>
+    
+    <div class="makers_info">
+    <p class="label_info">Nickname</p>
+    <p class="content_info">원빈</p>
+    </div>
+    <div class="makers_info">
+        <p class="label_info">A word</p>
+        <p class="content_info">이거 방탄표지야</p>
+    </div>
+    <div class="makers_info" id="line">
+        <p class="label_info">Contact</p>
+        <p class="content_info">애슐리메디슨</p>
+    </div>
+    
+    
+    <div class= "fb col-md-4 col-sm-4 col-xs-12">
+    <a href="https://www.facebook.com/beeoomp"><i class="fa fa-facebook-official fa-3x"></i></a>
+    </div>
+    <div class= "insta col-md-4 col-sm-4 col-xs-12">  
+    <a href="https://instagram.com/beombampatrk/"><i class="fa fa-instagram fa-3x"></i></a>
+    </div> 
+    </div>
+    </div>
+    </div> 
+    <!-- /.intro_container -->
 </div> 
 <!-- /.intro_makers -->
 
