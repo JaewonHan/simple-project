@@ -1,0 +1,37 @@
+
+<img id="aaa" src="/assets/<%= $school_name %>" style="width:100%; height:100%">
+<script type="text/javascript">
+window.print()
+</script>
+<style>
+@page{  size:auto; margin : 0mm;}
+
+
+
+body#p_page3 {
+display:fixed;
+margin-left:1px;
+margin-top:1px;
+margin-bottom: 0px;
+
+
+}
+</style>
+
+<script type="text/javascript">
+function forwarding()
+{location = "/"}
+</script>
+<body id=factory onLoad="setTimeout('forwarding()', 1);">
+
+<div class="adjj" style="font-align:center; display:block; position:absolute; top: 638px; left: 540px; z-index:3; font-size:18px;">
+<p style="margin-top:23px"><%= @subject %></p>
+<p style="margin-top:23px"><%= @professor %></p>
+<p style="margin-top:22px"><%= @major %></p>
+<p style="margin-top:21px"><%= @year %></p>
+<p style="margin-top:21px"><%= @stnumb %></p>
+<p style="margin-top:21px"><%= @username %></p>
+<p style="margin-top:21px"><%= @day %></p>
+</div>
+
+
