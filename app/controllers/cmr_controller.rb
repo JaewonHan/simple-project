@@ -19,7 +19,7 @@ def rprint
 if params[:policySelect].to_i == 0
 $school_name = 'cover_main'
 else if params[:policySelect].to_i == 1
-$school_name = 'gachon.pdf'
+$school_name = 'cover_gachon'
 else if params[:policySelect].to_i ==  2   
 $school_name = 'cover_catholic'
 else if params[:policySelect].to_i ==   3  
