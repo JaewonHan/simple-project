@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  <title>대학별 레포트표지 :: CovermyReport</title>
-  
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  
-</head>
-<body id="p_page3">
-<%= yield %>
-<script>
-function click() {
-if((event.button==2) || (event.button==3)) {
- 
-function keypressed() {
-var key=event.keyCode;
-if(key==17) { alert('Ctrl키는 사용 불가능합니다.'); return false; }
-}
-document.onmousedown=click;
-document.onkeydown=keypressed;
-</script>
-</body>
+    <head>
+        <title>대학별 레포트표지 :: CovermyReport</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body id="p_page3">
+        <%= yield %>
+            <script>
+            function click() {
+            if((event.button==2) || (event.button==3)) {
+              alert("오른쪽 버튼은 사용하실 수 없습니다");
+              return false;
+            }
+            }
+            function keypressed() {
+            var key=event.keyCode;
+            if(key==16) { alert('Shift키는 사용 불가능합니다.'); return false; }
+            if(key==17) { alert('Ctrl키는 사용 불가능합니다.'); return false; }
+            if(key==18) { alert('Alt키는 사용 불가능합니다.'); return false; }
+            if(key==93) { alert('메뉴키는 사용 불가능합니다.'); return false; }
+            if(key==41) { alert('메뉴키는 사용 불가능합니다.'); return false; }
+            }
+            document.onmousedown=click;
+            document.onkeydown=keypressed;
+            </script>
+    </body>
 </html>
