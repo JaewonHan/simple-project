@@ -230,18 +230,10 @@ div#center {
 
 /*   개발자 소개   */
 
-.howtouse {
-    text-align: center;
-    font-weight: 700;
-    font-size: 60px;
-    color: black;
-    padding-top:50px;
-    padding-bottom:0px;
-}
 
 .intro_makers {
     padding-left: 0px;
-    padding-top: 0px;
+    padding-top: 40px;
     width: 100%;
     height:0px;
     float: left;
@@ -249,39 +241,11 @@ div#center {
 }
 
 
-
-.intro_title>p {
-    position: relative;
-    text-align: center;
-    font-size: 60px;
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: white;
-    font-weight: 700;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-#intro_container {
-    position: relative;   
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 40px;
-    width: 100%;   
-    float: left;
-    left: 0px;
-   
-    
-}
-div {
-    display: block;
-}
 .maker_item {
     position: relative;
     padding: 0px;
     left:0px;
     float: left;
-    
-    
 }
 
 div {
@@ -309,8 +273,6 @@ div {
     padding-right: 7px;
     width: 300px;
     cursor: default;
-   
-    border-radius: 10px;
     background-color: transparent;
     float: left;
 }
@@ -322,8 +284,9 @@ div {
 .section_makers_info > .makers_info:first-child {
     border-bottom: 4px dotted white;
 }
-#line {
-    border-bottom: 4px solid white;
+
+.makers_info.line {
+    border-bottom: 4px dotted white;
     height:38px;
     
     
@@ -371,14 +334,8 @@ div {
     font-size: 11pt;
 }
 
-#intro_container {
-    position: relative;
-    padding-left:20px;
-    padding-right:20px;
-}
 
-
-/* aside *//////////////////////////////////
+/* aside */
 .callout {
     display: table;
     width: 100%;
@@ -400,47 +357,7 @@ div {
     height:80px;
 }
 
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-}
 
-
-/* contact *//////////////////////////////
-.contactus {
-    text-align: center;
-    font-weight: 700;
-    font-size: 60px;
-    color: black;
-    padding:0px;
-    padding-bottom:100px;
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    
-}
-
-.logo1 {
-    position:relative;
-    width:179px;
-    height:40px;
-    float:left;
-    left:500px;
-    top:80px;
-}
-.logo2 {
-    position:relative;
-    width:179px;
-    height:40px;
-    float:left;
-    left:550px;
-    top:80px;
-}
-.dogsound {
-    position:relative;
-    float:left;
-    top:0px;
-}
 .fa {
     position:relative;
     float:left;
@@ -449,18 +366,9 @@ div {
     padding:0px;
 
 }
-.fb {
-    position:relative;
-    float:left;
-    padding:0px;
+.fa {
+    
 }
-.insta {
-    position:relative;
-   
-    float:left;
-    padding:0px;   
-}
-
 
 #makers {
     

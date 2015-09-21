@@ -1,7 +1,11 @@
 class CmrController < ApplicationController
 def main
+    mark = ViewCount.new
+    mark.ip_address = request.remote_ip
+    mark.save
+    @total_view_count = ViewCount.count
 
-
+    
 
 end
 def rprint
